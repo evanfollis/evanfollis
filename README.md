@@ -13,7 +13,7 @@ Based in Nashville, Tennessee.
 | Start here | What to inspect |
 |---|---|
 | [synaplex.ai](https://synaplex.ai) + [repo](https://github.com/evanfollis/synaplex) | Public face of the Synaplex research platform and methodology-as-product. |
-| [Skillfoundry Preflight live product](https://skillfoundry.synaplex.ai/products/launchpad-lint) + [server manifest](https://skillfoundry.synaplex.ai/products/launchpad-lint/server.json) + [repo](https://github.com/evanfollis/skillfoundry-products/tree/main/products/launchpad-lint) | A deployed MCP/REST readiness checker for marketplace launch packages. |
+| [Skillfoundry Preflight live product](https://skillfoundry.synaplex.ai/products/launchpad-lint/) + [server manifest](https://skillfoundry.synaplex.ai/products/launchpad-lint/server.json) + [repo](https://github.com/evanfollis/skillfoundry-products/tree/main/products/launchpad-lint) | A deployed MCP/REST readiness checker for marketplace launch packages. |
 | [Atlas](https://github.com/evanfollis/atlas) | Causal research engine with pre-registered hypotheses, typed evidence, findings, and promote / kill / continue / pivot decisions. |
 | [Command](https://github.com/evanfollis/command) | Internal operator surface for the same Synaplex workspace: executive chat, project state, artifact browsing, and host-side recovery. |
 | [Skillfoundry Harness](https://github.com/evanfollis/skillfoundry-harness) + [Context Repository](https://github.com/evanfollis/context-repository) | Reusable infrastructure for git-backed context repositories, validation, canon objects, provenance, and replayable claims. |
@@ -28,7 +28,7 @@ Based in Nashville, Tennessee.
 
 ### Working systems and case studies
 
-[Skillfoundry Preflight / Launchpad Lint](https://skillfoundry.synaplex.ai/products/launchpad-lint) is a live product for auditing MCP launch readiness and drafting marketplace-ready packages. The canonical implementation lives in [`skillfoundry-products/products/launchpad-lint`](https://github.com/evanfollis/skillfoundry-products/tree/main/products/launchpad-lint), with public health and manifest endpoints exposed under the Skillfoundry route.
+[Skillfoundry Preflight / Launchpad Lint](https://skillfoundry.synaplex.ai/products/launchpad-lint/) is a live product for auditing MCP launch readiness and drafting marketplace-ready packages. The canonical implementation lives in [`skillfoundry-products/products/launchpad-lint`](https://github.com/evanfollis/skillfoundry-products/tree/main/products/launchpad-lint), with public health and manifest endpoints exposed under the Skillfoundry route.
 
 [Command](https://github.com/evanfollis/command) is the workspace operator console: project portfolio state, executive chat, artifact browsing, deployment-adjacent checks, and recovery workflows. The public endpoint redirects to login; the repo is the inspectable artifact.
 
