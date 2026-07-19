@@ -1,63 +1,44 @@
 # Evan Follis, CFA
 
-**AI systems architect building governed agent infrastructure, reproducible research systems, and quantitative decision tools.**
+**I build governed AI systems where claims, evidence, runtime state, and release decisions stay inspectable after the demo.**
 
-My work sits at the intersection of applied machine learning, investment research, agent architecture, and production engineering. I am especially interested in systems that remain inspectable, falsifiable, and useful after the initial demonstration.
+My work sits at the intersection of applied machine learning, investment research, agent architecture, and production engineering. The common thread is systems that can be questioned: explicit provenance, reproducible checks, honest status labels, and durable artifacts instead of ephemeral agent state.
 
 Based in Nashville, Tennessee.
 
-[LinkedIn](https://www.linkedin.com/in/evan-follis/) · [Synaplex](https://synaplex.ai)
+[LinkedIn](https://www.linkedin.com/in/evan-follis/) | [Synaplex](https://synaplex.ai)
 
-## Start here
+## Proof in 90 seconds
 
-| If you want to see... | Start with | Status |
-|---|---|---|
-| Rigorous quantitative research | [Atlas](https://github.com/evanfollis/atlas) | Active research |
-| A working public developer tool | [Preflight](https://github.com/evanfollis/preflight) | Public product |
-| A full-stack AI application | [AI Mentor](https://github.com/evanfollis/mentor) | Deployed project |
-| My broader AI-systems thesis | [Synaplex](https://github.com/evanfollis/synaplex) | In development |
-| Agent runtime engineering | [Skillfoundry Harness](https://github.com/evanfollis/skillfoundry-harness) | Active infrastructure |
-| Provenance and durable context | [Context Repository](https://github.com/evanfollis/context-repository) | Specification and pattern lab |
+| Start here | What to inspect |
+|---|---|
+| [synaplex.ai](https://synaplex.ai) + [repo](https://github.com/evanfollis/synaplex) | Public face of the Synaplex research platform and methodology-as-product. |
+| [Skillfoundry Preflight live product](https://skillfoundry.synaplex.ai/products/launchpad-lint) + [server manifest](https://skillfoundry.synaplex.ai/products/launchpad-lint/server.json) + [repo](https://github.com/evanfollis/skillfoundry-products/tree/main/products/launchpad-lint) | A deployed MCP/REST readiness checker for marketplace launch packages. |
+| [Atlas](https://github.com/evanfollis/atlas) | Causal research engine with pre-registered hypotheses, typed evidence, findings, and promote / kill / continue / pivot decisions. |
+| [Command](https://github.com/evanfollis/command) | Internal operator surface for the same Synaplex workspace: executive chat, project state, artifact browsing, and host-side recovery. |
+| [Skillfoundry Harness](https://github.com/evanfollis/skillfoundry-harness) + [Context Repository](https://github.com/evanfollis/context-repository) | Reusable infrastructure for git-backed context repositories, validation, canon objects, provenance, and replayable claims. |
 
-## Selected work
+## Three lanes
 
-### [Atlas](https://github.com/evanfollis/atlas)
+### Synaplex research platform
 
-A causal research engine for pre-registered hypotheses, experiments, typed evidence, and explicit **promote / kill / continue / pivot** decisions.
+[Synaplex](https://github.com/evanfollis/synaplex) is the system: a public research and evaluation surface for studying AI systems through canon-backed claims, evidence, decisions, and publications. Its public face is [synaplex.ai](https://synaplex.ai); its private operator face is [Command](https://github.com/evanfollis/command).
 
-Atlas currently applies the framework to crypto-market microstructure. Its research record includes positive findings, failed hypotheses, out-of-sample tests, backtests, event studies, and the methodological lessons produced by negative results.
+[Atlas](https://github.com/evanfollis/atlas) is the quantitative research pod. It applies the same methodology to crypto-market microstructure: formulate falsifiable claims, run experiments, record typed evidence, and promote only claims that survive the gate.
 
-### [Preflight](https://github.com/evanfollis/preflight)
+### Working systems and case studies
 
-A public MCP and REST tool that checks whether an MCP server is ready for the MCP Registry, Smithery, and npm. Findings are evidence-backed, source-linked, and paired with concrete fixes.
+[Skillfoundry Preflight / Launchpad Lint](https://skillfoundry.synaplex.ai/products/launchpad-lint) is a live product for auditing MCP launch readiness and drafting marketplace-ready packages. The canonical implementation lives in [`skillfoundry-products/products/launchpad-lint`](https://github.com/evanfollis/skillfoundry-products/tree/main/products/launchpad-lint), with public health and manifest endpoints exposed under the Skillfoundry route.
 
-### [AI Mentor](https://github.com/evanfollis/mentor)
+[Command](https://github.com/evanfollis/command) is the workspace operator console: project portfolio state, executive chat, artifact browsing, deployment-adjacent checks, and recovery workflows. The public endpoint redirects to login; the repo is the inspectable artifact.
 
-A full-stack architecture-learning system with a Next.js interface, FastAPI backend, PostgreSQL, Redis, Slack integration, adaptive quizzes, spaced repetition, and gated progression.
+[AI Mentor](https://github.com/evanfollis/mentor) is a completed case study in an AI-powered architecture learning system: Next.js, FastAPI, PostgreSQL, Redis, Slack integration, adaptive quizzes, spaced repetition, and gated progression. I am not presenting it as currently deployed because I did not verify a live endpoint.
 
-### [Synaplex](https://github.com/evanfollis/synaplex)
+### Reusable infrastructure
 
-A system for studying AI systems through reproducible evaluations, reviewed evidence, and durable claims. Atlas and Skillfoundry act as applied research and product-development probes within the broader system.
+[Skillfoundry Harness](https://github.com/evanfollis/skillfoundry-harness) is a Python runtime harness for git-backed agent context repositories. It owns validation, context lineage bootstrap, bounded branch workspaces, proposal / approval / apply flow, and durable execution artifacts.
 
-## How the projects fit together
-
-```mermaid
-flowchart TD
-    S["Synaplex<br/>Research and evaluation system"]
-    A["Atlas<br/>Quantitative research"]
-    SF["Skillfoundry<br/>Product discovery"]
-    CR["Context Repository<br/>Provenance contracts"]
-    H["Skillfoundry Harness<br/>Runtime and validation"]
-    AG["Skillfoundry Agents<br/>Roles and topology"]
-    P["Products<br/>Preflight and other tools"]
-
-    S --> A
-    S --> SF
-    CR --> H
-    H --> AG
-    AG --> P
-    SF --> P
-```
+[Context Repository](https://github.com/evanfollis/context-repository) is the pattern lab and canon substrate: the formal model for claims, evidence, decisions, policy, promotion, realization, replay, and provenance.
 
 ## Working principles
 
@@ -68,6 +49,10 @@ flowchart TD
 - Clear boundaries between claims, evidence, policy, and decisions.
 - Complexity only when it survives comparison with a simpler baseline.
 - Negative results are part of the product.
+
+## Licensing
+
+License status is repository-specific. I do not present the portfolio as blanket open source; inspect each repository before assuming reuse rights. The public Preflight repo carries MIT licensing, while core Synaplex, Atlas, Command, Harness, and Context Repository surfaces should be treated according to their individual repository state.
 
 ## Background
 
