@@ -15,7 +15,7 @@ Based in Nashville, Tennessee.
 | [synaplex.ai](https://synaplex.ai) + [repo](https://github.com/evanfollis/synaplex) | Public face of the Synaplex research platform and methodology-as-product. |
 | [Skillfoundry Preflight live product](https://skillfoundry.synaplex.ai/products/preflight/) + [server manifest](https://skillfoundry.synaplex.ai/products/launchpad-lint/server.json) + [repo](https://github.com/evanfollis/skillfoundry-products/tree/main/products/launchpad-lint) | A deployed MCP/REST readiness checker for marketplace launch packages. |
 | [Atlas](https://github.com/evanfollis/atlas) | Causal research engine with pre-registered hypotheses, typed evidence, findings, and promote / kill / continue / pivot decisions. |
-| [Command](https://github.com/evanfollis/command) | Private owner observatory for the Synaplex workspace: a system-health dashboard over the closure ledger, execution health, provider-fallback status, research/evidence flow, and full telemetry lineage. Implementation is published; production deployment is gated. |
+| [Command](https://github.com/evanfollis/command) | Private owner observatory for the Synaplex workspace: a system-health dashboard over the closure ledger, execution health, provider-fallback status, research/evidence flow, and full telemetry lineage. Implementation is published; the private production observatory is deployed and live. |
 | [Skillfoundry Harness](https://github.com/evanfollis/skillfoundry-harness) + [Context Repository](https://github.com/evanfollis/context-repository) | Reusable infrastructure for git-backed context repositories, validation, canon objects, provenance, and replayable claims. |
 
 ## Three lanes
@@ -30,7 +30,7 @@ Based in Nashville, Tennessee.
 
 [Skillfoundry Preflight / Launchpad Lint](https://skillfoundry.synaplex.ai/products/preflight/) is a live product for auditing MCP launch readiness and drafting marketplace-ready packages. The canonical implementation lives in [`skillfoundry-products/products/launchpad-lint`](https://github.com/evanfollis/skillfoundry-products/tree/main/products/launchpad-lint), with public health and manifest endpoints exposed under the Skillfoundry route.
 
-[Command](https://github.com/evanfollis/command) is the workspace's private owner observatory: a system-health dashboard over the closure ledger, execution health, provider-fallback state, research/evidence flow, and full telemetry lineage. The implementation is published in the repo; production deployment is still gated, so the repo is the inspectable artifact.
+[Command](https://github.com/evanfollis/command) is the workspace's private owner observatory: a system-health dashboard over the closure ledger, execution health, provider-fallback state, research/evidence flow, and full telemetry lineage. The implementation is published and the private production observatory is deployed; the repo remains the public inspectable artifact.
 
 [AI Mentor](https://github.com/evanfollis/mentor) is a completed case study in an AI-powered architecture learning system: Next.js, FastAPI, PostgreSQL, Redis, Slack integration, adaptive quizzes, spaced repetition, and gated progression. I am not presenting it as currently deployed because I did not verify a live endpoint.
 
